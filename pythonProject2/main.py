@@ -1,0 +1,91 @@
+import re
+
+# РЕгулярные выражения
+
+# a = r'Hello \n Word'
+#
+# print(a)
+# print(type(a))
+#
+# c = 'И снова \nЗдравствуйте'
+# print(c)
+#
+# b = re.findall(r'Пусть всегда', "Пусть всегда будет солнце!!, Пусть всегда буду я")
+# print(b)
+#
+# d = re.findall(r'\w+', "Пусть всегда будет солнце!!, Пусть всегда буду я")
+# print(d)
+#
+# e = re.findall(r'\w*', "Пусть всегда будет солнце!!, Пусть всегда буду я")
+# print(e)
+#
+# g = re.findall(r'\d+', "Пусть всег35да бу7дет со88лнце!!, Пусть всегда буду я")
+# print(g)
+#
+# e1 = re.findall(r'вс...а', "Пусть всегда будет солнце!!, Пусть всегда буду я")
+# print(e1)       # символ .
+#
+# e2 = re.findall(r'да.бу', "Пусть всегда будет солнце!!, Пусть всегда буду я")
+# print(e2)
+#
+# e3 = re.findall(r'\s', "Пусть всегда будет солнце!!, Пусть всегда буду я")
+# print(e3)    # выведет все пробелы
+
+# e4 = re.findall(r'\b', "Пусть всегда будет солнце!!, Пусть всегда буду я")
+# print(e4)     # начало и конец слова
+
+# e5 = re.findall(r'[0-9]', "hugyihgd3456788987tnh78th5e56")
+# print(e5)
+
+e6 = re.findall(r'[0-9][a-z]', "hugyihgd3456788987tnh78th5e56")
+print(e6)
+#
+e6 = re.findall(r'[a-zA-Z]\d', "hugyihgd3456g7L88I987tnh78th5e56")
+print(e6)
+#
+# e6a = re.findall(r'[^g]\d', "hugyihgd3456g7L88I987tnh78th5e56")
+# print(e6a)
+
+# e7 = re.findall(r'[^I]\d', "hugyihgd3456g7L88I987tnh78th5e56")
+# print(e7)    # этого символа не должно быть I
+#
+# e6b = re.findall(r'[^o][^I]\d', "hugyihhgd3456g7L88I987tnh78t88h5e56")
+# print(e6b)
+#
+# e6c = re.findall(r'h{3}', "hugyihhhgd3456g7L88I987tnhhh78th5e56")
+# print(e6c)
+
+e6 = re.findall(r'8.h5', "hugyihgd3456g7L88I987tnh78th5e56")
+print(e6)
+
+e61 = re.findall(r'8.eh{3}', "hugyihgd3456g7L88I987tnh78tehhh5e56")
+print(e61)
+
+e61 = re.findall(r'h{,3}', "hugyihgd3456g7L88I987tnh78tehhh5e56")
+print(e61)
+
+e611 = re.findall(r'h{3}', "hugyihgd3456g7L88I987tnh78tehhh5e56")
+print(e611)
+
+e612 = re.findall(r'h{2, }', "hugyihhhgd345hh6g7L88I987tnh78tehhh5e56")
+print(e612)
+
+e613 = re.findall(r'h{1,3}', "hugyihgd3456g7L88I987tnh78tehhh5e56")
+print(e613)
+
+# e6 = re.split(r"8", "hugyihgd3456g7L88I987tnh78th5e56")
+# print(e6)
+
+
+# a = re.sub(r"Москву", "Пермь", "Я люблю Москву")
+# print(a)
+#
+# b = re.sub(r'-\d', '!!!&&&!!!', 'sdvfs-sdfe89657-87shg78hf')
+# print(b)        # заменяет выражение на !!... после того как встретит цифру после -
+
+# x = open('82.txt', encoding='utf-8')
+# y = x.read()
+# y = re.findall(r'[А-Я].[А-Я]', y)
+# print('номера = ', y)
+#
+# x.close()
